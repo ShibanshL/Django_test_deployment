@@ -15,7 +15,7 @@ def testing(request):
     testLocl = testDataSr(data=testingmyData, many=True)
     if request.method == 'GET':
       
-        return JsonResponse({'DATA':"THIS IS WORKING AND LIVE"})
+        return JsonResponse({'DATA':"THIS IS WORKING AND LIVE #1"})
     
     if request.method == 'POST':
         if testLocl.is_valid():
